@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Ratings Trends Visualization</title>
+</head>
+<body>
+<button onclick="window.location.href='NetflixD3_Jonathan_Wagoner.html';">Go Back</button>
+    <h1>Netflix Ratings Trends Visualization Project</h1>
+    <p>I began this project by looking for a dataset that would be fun to work with. After searching Kaggle for a bit, I came across a Netflix dataset that looked fun. I then decided on my question: What trends can we find in Netflix ratings across the years. So I set out to create a visualization we can find our answer from. After a bit of thinking, I decided on a stacked bar chart, as it made the most sense for this question. On the x-axis would be the years and the y-axis would be the number of movies or TV shows.</p>
+
+    <p>When I first wrote the code, I didn’t sort them into time frames so there were lots and lots of bars, so I changed it to be decades like 1930-1939. I chose light red for TV-MA and red for R because red is sometimes associated with things that are “bad”. I chose green for PG and blue for TV-PG as they’re often associated as being “good” and softer colors. I chose yellow for PG-13 and orange for TV-14 as they’re associated as the middle colors.</p>
+
+    <p>Once I sorted them into time frames, there ended up being ten nodes on the x-axis. I noticed it was hard to tell the counts of each section and impossible to see sections that had a small number of movies or TV shows during those time frames, so I set off to fix it. First, I used a tooltip to display what category of movie you were hovering over a part of the bar, as well as the number of instances. This didn’t fix the problem of it being hard to see the time frames that had little data in them. I decided to make it possible to click on a time frame on the x-axis and expand to just those years. When you click on a time frame, it’s now easy to see the different ratings.</p>
+
+    <p>Then I was left with the problem of being stuck on the new zoomed-in chart. So, I created a button that reset, or create the original chart again. I had trouble at this part for a while, I kept accidentally making it reset the chart, but I couldn’t click a different time frame. Eventually I fixed it with a function though. After adding a legend to make it easier to see what the colors represented, my chart was complete. As for what I learned from my chart, we see as time goes on, the mature ratings such as TV-MA and R have become the majority. In the earlier years there isn’t much data to look at so we can’t take too much from it, but after 2010 we see a jump to more mature media. We also see it took longer for mature TV shows to become the majority, compared to movies, but now they are the vast majority of TV shows.</p>
+
+
+<h2>Here's the Examples</h2>
+    <img src="https://i.imgur.com/fpTxVhC.jpg" alt="Visualization 1">
+    <img src="https://i.imgur.com/1xRiiIc.jpg" alt="Visualization 2">
+    <img src="https://i.imgur.com/QkklEZS.jpg" alt="Visualization 3">
+    <img src="https://i.imgur.com/yNG3tKp.jpg" alt="Visualization 4">
+
+    <h2>Here's demonstration video</h2>
+    <iframe width="550" height="350" src="https://www.youtube.com/embed/ZHvjtcAicgE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>
